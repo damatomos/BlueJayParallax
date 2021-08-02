@@ -1,0 +1,197 @@
+/* Global CSS */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Helvica", sans-serif;
+  line-height: 1.8em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Default Elements */
+
+.link {
+  position: relative;
+  background: black;
+
+  padding: 20px;
+  top: 50px;
+
+  font-size: .8rem;
+}
+
+.link:hover {
+  border: 5px solid rgb(250, 58, 58);
+  border-left: 0;
+
+  color: rgb(250, 58, 58);
+}
+
+.section {
+  height: 100%;
+}
+
+/* Default Section Photo */
+.bg-photo {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.section .container-photo {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  opacity: 1;
+
+  text-align: center;
+}
+
+.container-photo span {
+  background: rgb(3, 2, 54);
+  padding: 10px 50px;
+
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e2e2ff;
+
+  border-radius: 0.4rem;
+
+  letter-spacing: 2px;
+}
+
+/* Default Section Info */
+
+.container-info {
+  padding: 50px;
+  text-align: center;
+}
+
+.container-info h1 {
+  color: #1d1d1d;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  line-height: 2.2rem;
+}
+
+.container-info p {
+  margin: 0 auto;
+  width: 60%;
+  color: #000000a8;
+
+  font-size: 1.2rem;
+}
+
+.dark-info {
+  background: rgb(2, 26, 54);
+}
+
+.dark-info h1 {
+  color: #e2e2ff;
+}
+
+.dark-info p {
+  color: #e2e2ffa8;
+}
+
+/* Section Image - 01 */
+.bg-photo01 {
+  background-image: url("../img/bg-photo01.jpg");
+}
+
+/* Section Image - 02 */
+.bg-photo02 {
+  background-image: url("../img/bg-photo02.jpg");
+  height: 400px;
+}
+
+/* Section Image - 03 */
+.bg-photo03 {
+  background-image: url("../img/bg-photo03.png");
+}
+
+/* Footer */
+.footer {
+  background: black;
+  padding: 20px;
+
+  text-align: center;
+}
+
+.footer small {
+  color: white;
+  width: 100%;
+}
+
+.github img {
+  border-radius: 100%;
+  width: 48px;
+}
+
+.github img:hover {
+  background: rgb(2, 26, 54);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+
+  html, body {
+    font-size: 14px;
+  }
+
+  .container-info p {
+    width: 70%;
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  html, body {
+    font-size: 12px;
+  }
+
+  .container-info p {
+    width: 80%;
+  }
+
+  .container-photo span { 
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
+  .container-photo span { 
+    font-size: 1.2rem;
+  }
+  
+  .bg-photo01 span {
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  
+  .container-photo span { 
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+
+  .bg-photo01 span {
+    font-size: 2rem;
+  }
+
+}
